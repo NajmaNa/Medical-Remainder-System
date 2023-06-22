@@ -1,0 +1,81 @@
+body {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:1600px 800px;
+  }
+  #form {
+      background-color: rgb(245, 245, 250);
+      width: 300px;
+      border: 2px solid rgb(59, 135, 223);
+      padding: 30px;
+     margin-left: 550px;
+     margin-top: 30px;
+     border-radius: 10px;
+   }
+  #log
+  {
+      margin-left: 680px;
+     margin-top: 100px;
+  }
+  #btn 
+  {
+      background-color:cornflowerblue;
+      color: black;
+      padding: 12px ;
+      margin-left: 90px;
+  margin-top: 10px;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+       border-radius: 5px;   
+  }
+  input:focus ~label,
+  input:valid ~ label{
+    top: -49px;
+    left: 15px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #0c7b9c;
+  }
+  input{
+    outline: none;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 35px;
+    font-size: 15px;
+    margin-left:100px;
+    margin-top:10px;
+  }
+  input:focus{
+    border: 1.5px solid #1f52f9;
+  }
+  input[type="email"]{
+    display: block;
+    width: 300px;
+    margin: 10px 0 0 10px;
+  }
+  .pass{
+    display: inline-block;
+  }
+  input[type="password"]{
+    display: block;
+    width: 300px;
+    margin: 10px 0 0 10px;
+  }
+  label{
+    position: relative;
+    font-family:roboto;
+    color: #555;
+    font-size: 15px;
+    pointer-events: none;
+    left: 20px;
+    top: -28px;
+    transition: .2s all;  
+  }
+  #btn:hover {
+          opacity: 0.8;
+  }
+  

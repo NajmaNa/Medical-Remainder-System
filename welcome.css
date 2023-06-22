@@ -1,0 +1,15 @@
+body {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size:1600px 700px;
+  }
+#form {
+    background-color: rgb(186, 186, 204);
+    width: 300px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin-left:100px;
+     margin-top:10px;
+}

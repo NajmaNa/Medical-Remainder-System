@@ -1,0 +1,43 @@
+#form {
+    background-color: rgb(245, 245, 250);
+    width: 300px;
+    border: 2px solid rgb(59, 135, 223);
+    padding: 30px;
+   margin-left: 540px;
+   margin-top: 60px;
+   border-radius: 10px;
+}
+body {
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+label
+{
+  font-size: 20px;
+}
+input{
+    outline: none;
+    border: 1px solid #9c9c9c;
+    border-radius: 5px;
+    padding: 12 20px;
+    height: 35px;
+    font-size: 15px;
+    margin:20px 0;
+    width:100%;
+  }
+  #btn {
+    background-color:cornflowerblue;
+    color: black;
+    padding: 12px ;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;   
+}
+#lab
+  {
+    font-size: 20px;  
+  }

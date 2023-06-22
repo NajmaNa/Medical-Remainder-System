@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login</title>
+<style> 
+    </style>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <h2 id="log">LOGIN</h2>
+<div id="form">
+<form id="login-form" method="POST" action="check_login.php">
+    <div class="user-name">
+        <input type="email" class="email" id="email" required>
+        <label for="email">Email</label> 
+      </div>
+      <div class="pass">
+        <input type="password" class="passwords" id="passwords" required>
+        <label for="passwords">Password</label>
+      </div>
+<button id="btn" type="submit" onclick="document.location='get.html'"><b>Login</b></button>
+<p style="text-align: center;color: #0c7b9c;">Don't have an account? <br>Sign up <a href="register.html">here</a></p>
+</form>
+</div>
+</div>
+<div id="message"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+$(document).ready(function() {
+$("#login-form").submit(function(event) { event.preventDefault();
+$.ajax({
+type: "POST",
+url: $(this).attr("action"), data: $(this).serialize(), success: function(response) {
+if (response.trim() == "valid") {
+$("#message").html("Login successful.");
+} else {
+$("#message").html("Invalid username or password.");
+}
+},
+error: function() {
+$("#message").html("An error occurred while processing your request.");
+}
+});
+});
+});
+</script>
+</body>
+</html>

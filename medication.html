@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='medication.css'>
+</head>
+<body>
+    <form id="form" action="remainder.html">
+        <h2 style="text-align:center; color: #0c7b9c;">Your Medication Details</h2>
+        <label id="lab" style="color: #0c7b9c;">Medication name</label>
+        <input type="text">
+        <label id="lab" style="color: #0c7b9c;">Unit</label>
+        <select name="unit" id="unit"  >
+            <option value="Capsule">Capsule</option>
+            <option value="Drop">Drop</option>
+            <option value="Gram">Gram</option>
+            <option value="Injection">Injection</option>
+            <option value="Milligram">Milligram</option>
+            <option value="Pill">Pill</option>
+          </select>
+          <label id="lab" style="color: #0c7b9c;">Dosage</label>
+          <input type="text" ><br>
+          <button id="btn" type="submit" onclick="document.location='remainder.html'"><b>Proceed</b></button>
+    </form>
+</body>
+</html>
